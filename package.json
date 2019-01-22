@@ -1,20 +1,27 @@
 {
   "name": "webbankingmobileagentreact",
-  "version": "0.0.0",
-  "description": "No description",
-  "author": null,
+  "version": "0.1.0",
+  "description": "Mobile Agent des Programmierprojekts an der FHWS",
+  "author": "Fabian Konrad",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "dependencies": {
     "expo": "^32.0.0",
     "expo-cli": "^2.6.14",
     "prop-types": "^15.3.2",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react": "^16.6.3",
+    "react-native": "^0.57.8",
     "react-native-camera": "^1.0.2",
-    "react-native-paper": "2.1.3",
+    "react-native-paper": "^2.1.3",
     "react-native-qrcode-scanner": "1.1.2",
     "react-navigation": "3.0.9",
-    "react-password-mask": "3.3.1"
+    "react-password-mask": "3.3.1",
+    "webpack": "^4.0.0"
+  },
+  "devDependencies": {
+    "expo-constants": "^2.0.0",
+    "expo-core": "^2.0.0",
+    "react-native-scripts": "^2.0.1",
+    "react-native-git-upgrade": "^0.2.7"
   }
 }
