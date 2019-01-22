@@ -1,3 +1,4 @@
+# Diese Datei ist obsolet.
 ## Manual standalone app update to Expo SDK 27
 
 Make sure to update exp!

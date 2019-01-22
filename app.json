@@ -13,9 +13,6 @@
       "icon": "https://d1wp6m56sqw74a.cloudfront.net/~assets/c9aa1be8a6a6fe81e20c3ac4106a2ebc",
       "hideExponentText": false
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "packagerOpts": {
       "assetExts": [
         "ttf",
@@ -26,14 +23,17 @@
     },
     "ios": {
       "supportsTablet": false,
-      "ios.publishBundlePath": "ios/webbankingmobileagentreact/Supporting/shell-app.bundle",
-      "ios.publishManifestPath": "ios/webbankingmobileagentreact/Supporting/shell-app-manifest.json",
-      "bundleIdentifier": "com.fkfhws.webbankingmobileagentreact"
+      "bundleIdentifier": "com.fkfhws.webbankingmobileagentreact",
+      "publishBundlePath": "ios/webbankingmobileagentreact/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/webbankingmobileagentreact/Supporting/shell-app-manifest.json"
     },
     "android": {
-      "package": "com.fkfhws.webbankingmobileagentreact",
-      "android.publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
-      "android.publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
-    }
+      "package": "com.fkfhws.webbankingmobileagentreact"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.10.2-sdk32.0.0-c59c23cd-1d49-49d2-a633-d03f9d554cf6.tar.gz"
+    },
+    "scheme": "exp5a37c93dd4004a94ac1c9126e88114ea"
   }
 }
