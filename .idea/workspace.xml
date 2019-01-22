@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="" />
+    <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Webbankingmobileagentreact.xcworkspace/xcuserdata/fabiankonrad.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Webbankingmobileagentreact.xcworkspace/xcuserdata/fabiankonrad.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="450">
               <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
             </state>
           </provider>
@@ -58,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/Instructions_für_Detach.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="284">
+              <first_editor relative-caret-position="900">
                 <caret line="60" selection-start-line="60" selection-end-line="60" />
               </first_editor>
               <second_editor />
@@ -244,6 +246,7 @@
       <workItem from="1548181942281" duration="3822000" />
       <workItem from="1548186166074" duration="803000" />
       <workItem from="1548187203761" duration="2045000" />
+      <workItem from="1548189447639" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1548167962700</created>
@@ -291,7 +294,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21426000" />
+    <option name="totallyTimeSpent" value="21531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,27 +429,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/android/detach-scripts/run-exp.sh" />
+    <entry file="file://$PROJECT_DIR$/android/app/expo.gradle" />
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/detach-scripts/run-exp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -457,27 +452,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/expo.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/contents.xcworkspacedata">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Instructions_für_Detach.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="284">
+          <first_editor relative-caret-position="900">
             <caret line="60" selection-start-line="60" selection-end-line="60" />
           </first_editor>
           <second_editor />
@@ -491,6 +472,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
