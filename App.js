@@ -1,16 +1,6 @@
 import * as React from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  AppRegistry,
-  Button,
-  Slider,
-  TouchableOpacity,
-} from 'react-native';
-import { Constants } from 'expo';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-
+import {Text, View,} from 'react-native';
+import {createAppContainer, createStackNavigator} from 'react-navigation';
 // You can import from local files
 // import AssetExample from './components/AssetExample';
 import Login from './components/Login.js';
@@ -19,7 +9,6 @@ import HomeScreen from './components/HomeScreen.js';
 import Scanscreen from './components/Scanner.js';
 
 // or any pure javascript modules available in npm
-import { Card } from 'react-native-paper';
 
 
 class TestWindow extends React.Component
