@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webbankingmobileagentreact.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webbankingmobileagentreact.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webbankingmobileagentreact.xcworkspace/xcuserdata/fabiankonrad.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/xcshareddata/xcschemes/webbankingmobileagentreact.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon1024x1024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon76x76@2x~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon76x76~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.plist.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXSDKVersions.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXShell.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/LaunchScreen.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/launch_background_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/launch_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/main.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/sdkVersions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/shell-app-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/shell-app.bundle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,11 +37,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/proguard-rules.pro">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="238" column="17" selection-start-line="238" selection-start-column="17" selection-end-line="238" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/host/exp/exponent/MainApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -103,10 +99,10 @@
         <option value="$PROJECT_DIR$/components/HomeScreen.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/App _old.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Instructions_für_Detach.md" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -227,7 +223,7 @@
       <workItem from="1548187203761" duration="2045000" />
       <workItem from="1548189447639" duration="105000" />
       <workItem from="1548190899982" duration="982000" />
-      <workItem from="1548191945462" duration="689000" />
+      <workItem from="1548191945462" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1548167962700</created>
@@ -271,11 +267,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548187902732</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Erneute Generierung der Ios- und Appledateien">
+      <created>1548192885803</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548192885803</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23202000" />
+    <option name="totallyTimeSpent" value="23954000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,6 +291,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="53" width="1260" height="907" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49725777" visible="true" weight="0.24939467" />
       <window_info id="Structure" order="1" sideWeight="0.50274223" side_tool="true" weight="0.24939467" />
@@ -301,10 +305,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49959645" weight="0.32883435" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49717513" weight="0.32883435" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49717513" visible="true" weight="0.32883435" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32883435" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50282484" side_tool="true" weight="0.32883435" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49798223" visible="true" weight="0.32883435" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49798223" weight="0.32883435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -367,7 +371,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Weiteres Bearbeiten, Versuch die Version zu aktualisieren" />
     <MESSAGE value="Erweiterung nach dem Patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erweiterung nach dem Patch" />
+    <MESSAGE value="Erneute Generierung der Ios- und Appledateien" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erneute Generierung der Ios- und Appledateien" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -405,13 +410,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/android/detach-scripts/run-exp.sh" />
     <entry file="file://$PROJECT_DIR$/android/app/expo.gradle" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/contents.xcworkspacedata" />
     <entry file="file://$PROJECT_DIR$/Instructions_für_Detach.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -455,6 +453,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="238" column="17" selection-start-line="238" selection-start-column="17" selection-end-line="238" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/host/exp/exponent/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
