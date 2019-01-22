@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instructions_für_Detach.md" beforeDir="false" afterPath="$PROJECT_DIR$/Instructions_für_Detach.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/expo.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/detach-scripts/run-exp.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/detach-scripts/run-exp.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -53,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ios/Podfile">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -63,14 +54,28 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Instructions_für_Detach.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+              <first_editor relative-caret-position="284">
+                <caret line="60" selection-start-line="60" selection-end-line="60" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.m">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -146,6 +151,12 @@
               <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
               <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,7 +243,7 @@
       <workItem from="1548173403531" duration="6385000" />
       <workItem from="1548181942281" duration="3822000" />
       <workItem from="1548186166074" duration="803000" />
-      <workItem from="1548187203761" duration="1718000" />
+      <workItem from="1548187203761" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1548167962700</created>
@@ -280,7 +291,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21099000" />
+    <option name="totallyTimeSpent" value="21426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,9 +304,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="53" width="1260" height="907" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49725777" visible="true" weight="0.24939467" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49725777" visible="true" weight="0.24939467" />
       <window_info id="Structure" order="1" sideWeight="0.50274223" side_tool="true" weight="0.24939467" />
       <window_info id="npm" order="2" sideWeight="0.50274223" side_tool="true" weight="0.24939467" />
       <window_info id="Favorites" order="3" sideWeight="0.5009141" side_tool="true" weight="0.24939467" />
@@ -310,7 +320,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49717513" weight="0.32883435" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32883435" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50282484" side_tool="true" weight="0.32883435" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49798223" visible="true" weight="0.32883435" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49798223" visible="true" weight="0.32883435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -393,7 +403,7 @@
     <entry file="file://$PROJECT_DIR$/.expo/packager-info.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/webbankingmobileagentreact.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" />
+    <entry file="file://$PROJECT_DIR$/Webbankingmobileagentreact.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" />
     <entry file="file://$PROJECT_DIR$/package-lock_old.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/react/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -447,9 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Podfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -470,12 +477,25 @@
     <entry file="file://$PROJECT_DIR$/Instructions_für_Detach.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+          <first_editor relative-caret-position="284">
+            <caret line="60" selection-start-line="60" selection-end-line="60" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Podfile">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
