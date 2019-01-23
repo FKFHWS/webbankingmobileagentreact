@@ -13,7 +13,7 @@ public class AppConstants {
 
   public static final String VERSION_NAME = "2.10.5";
   public static String INITIAL_URL = "exp://exp.host/@fkfhws/webbankingmobileagentreact";
-  public static final String SHELL_APP_SCHEME = "exp5a37c93dd4004a94ac1c9126e88114ea";
+  public static final String SHELL_APP_SCHEME = "exp0295bb86e4fe43ffbe96f6b96a3180de";
   public static final String RELEASE_CHANNEL = "default";
   public static boolean SHOW_LOADING_VIEW_IN_SHELL_APP = false;
   public static boolean ARE_REMOTE_UPDATES_ENABLED = true;

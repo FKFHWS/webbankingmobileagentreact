@@ -3,7 +3,7 @@ platform :ios, '10.0'
 
 target 'webbankingmobileagentreact' do
   pod 'ExpoKit',
-    :git => "http://github.com/expo/expo.git",
+    :git => "https://github.com/expo/expo.git",
     :tag => "ios/2.10.2",
     :subspecs => [
       "Core"
