@@ -1,9 +1,9 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 34639,
-  "expoServerNgrokUrl": "https://wc-zpa.fkfhws.webbankingmobileagentreact.exp.direct",
-  "packagerNgrokUrl": "https://packager.wc-zpa.fkfhws.webbankingmobileagentreact.exp.direct",
-  "ngrokPid": 34662,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "devToolsPort": 19002
 }
