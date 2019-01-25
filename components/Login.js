@@ -1,12 +1,6 @@
-import React, { Component  } from 'react';
-import {
-    ScrollView,
-    Text,
-    TextInput,
-    View,
-    Button,
-    StyleSheet,
-} from 'react-native';
+import React, {Component} from 'react';
+import {Button, ScrollView, Text, TextInput,} from 'react-native';
+import {SHA512} from "sha2";
 
 export default class Login extends Component {
 
@@ -15,20 +9,30 @@ export default class Login extends Component {
       super(props);
       this.state = 
       {
-        password: '',
-        successinfo: ''
+          username: '',
+          password: '',
+          successinfo: ''
       };
     }    
     
     checkCredentials ()
     {
-      return Math.random() >= 0.5;//Testweise.......
+        let loginjson = fetch('https://194.95.221.67/api.php/records/kunde', {
+            method: 'GET',
+            body: {
+                filter: 'ID,eq,' + this.state.username,
+                filter: 'PASSWORD,eq,' + SHA512(this.state.password),
+            }
+        });
+
+
+        return loginjson == "asdf";//Testweise.......
     }
     onLoginPress = () => {
         if ( this.checkCredentials() )
         {
           this.setState(
-            {successinfo: 'Login erfolgreich'}
+              {successinfo: 'Login erfolgreich'}//DEBUG
           );
           //this.props.navigation.navigate('Secured');
         }
@@ -46,9 +50,10 @@ export default class Login extends Component {
                 <Text style={{fontSize: 27}}>
                     Login
                 </Text>
-                <TextInput placeholder='Username' />
-                <TextInput secureTextEntry= 'true' placeholder='Password' />
-                <Button 
+                <TextInput placeholder='Username' onEndEditing={value => this.setState({username: value})}/>
+                <TextInput secureTextEntry placeholder='Password'
+                           onEndEditing={value => this.setState({password: value})}/>
+                <Button
                           onPress={this.onLoginPress}
                           title="Submit"
                       />

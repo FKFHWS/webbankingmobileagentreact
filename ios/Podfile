@@ -82,6 +82,8 @@ target 'webbankingmobileagentreact' do
   pod 'EXTaskManagerInterface',
     :path => "../node_modules/expo-task-manager-interface/ios"
 
+
+
   pod 'React',
     :path => "../node_modules/react-native",
     :inhibit_warnings => true,
@@ -99,6 +101,7 @@ target 'webbankingmobileagentreact' do
       "RCTWebSocket",
       "DevSupport",
       "CxxBridge"
+
     ]
   pod 'yoga',
     :path => "../node_modules/react-native/ReactCommon/yoga",
@@ -112,7 +115,17 @@ target 'webbankingmobileagentreact' do
   pod 'glog',
     :podspec => "../node_modules/react-native/third-party-podspecs/glog.podspec",
     :inhibit_warnings => true
+  #Pod für Kameranutzung hinzufügen
+  pod 'react-native-camera',
+      :path => "../node_modules/react-native-camera"
 
+  #React-native-randombytes einbinden für Apple-Unterstützung
+
+  #Picker nicht ins Pod einfügen. entsprechend github-Anleitung #297
+  pod 'Picker', :path => '../node_modules/react-native-picker'
+
+
+  pod 'react-native-randombytes', :path => '../node_modules/react-native-randombytes'
 
   post_install do |installer|
     installer.pods_project.main_group.tab_width = '2';

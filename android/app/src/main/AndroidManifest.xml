@@ -4,6 +4,15 @@
         xmlns:tools="http://schemas.android.com/tools"
         package="host.exp.exponent">
 
+    <!-- Android-SDK-Konfiguration überschreiben !-->
+    <!--
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:maxSdkVersion="27"
+        android:targetSdkVersion="19"
+        tools:overrideLibrary="host.exp.expoview" />
+        !-->
+
     <permission
             android:name="com.fkfhws.webbankingmobileagentreact.permission.C2D_MESSAGE"
             android:protectionLevel="signature"/>
@@ -17,6 +26,9 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <!-- ADD PERMISSIONS HERE -->
+    <!-- Kamera-Permission ergänzen !-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--<uses-permission tools:overrideLibrary="host.exp.expoview"/>!-->
     <!-- BEGIN OPTIONAL PERMISSIONS -->
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
     <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>

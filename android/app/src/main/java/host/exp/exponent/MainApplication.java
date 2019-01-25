@@ -34,6 +34,15 @@ import expolib_v1.okhttp3.OkHttpClient;
 
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
+import com.bitgo.randombytes.RandomBytesPackage;
+import org.reactnative.camera.RNCameraPackage;
+import com.tradle.react.UdpSocketsModule;
+import com.peel.react.TcpSocketsModule;
+import com.beefe.picker.PickerViewPackage;
+import com.peel.react.rnos.RNOSModule;
+import org.reactnative.camera.RNCameraPackage;
+import com.bitgo.randombytes.RandomBytesPackage;
+import org.reactnative.camera.RNCameraPackage;
 
 public class MainApplication extends ExpoApplication implements AppLoaderPackagesProviderInterface<ReactPackage> {
 
@@ -49,7 +58,16 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
         // TODO: add native modules!
 
         // Needed for `react-native link`
-        // new MainReactPackage()
+        // new MainReactPackage(),
+            new RandomBytesPackage(),
+            new RNCameraPackage(),
+            new UdpSocketsModule(),
+            new TcpSocketsModule(),
+            new PickerViewPackage(),
+            new RNOSModule(),
+            new RNCameraPackage(),
+            new RandomBytesPackage(),
+            new RNCameraPackage()
     );
   }
 

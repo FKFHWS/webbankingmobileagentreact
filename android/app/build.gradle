@@ -22,7 +22,7 @@ android {
   defaultConfig {
     applicationId 'com.fkfhws.webbankingmobileagentreact'
     minSdkVersion 21
-    targetSdkVersion 26
+    targetSdkVersion 27
     versionCode 1
     versionName '1.0.0'
     ndk {
@@ -104,6 +104,17 @@ apply from: 'expo.gradle'
 // WHEN_PREPARING_SHELL_REMOVE_TO_HERE
 
 dependencies {
+    compile project(':react-native-randombytes')
+    compile project(':react-native-udp')
+    compile project(':react-native-tcp')
+    compile project(':react-native-picker')
+    compile project(':react-native-os')
+  // React-native-Camera mitimplementieren. Es müssen hierbei auch Dependencies verändert werden
+  implementation ( project(':react-native-camera') )
+          {
+            exclude group: "com.android.support"
+          }
+  //compile project(':react-native-camera') // Das wurde oben über implementation bereits bereitgestellt
   implementation fileTree(dir: 'libs', include: ['*.jar'])
 
   implementation 'com.android.support:multidex:1.0.1'

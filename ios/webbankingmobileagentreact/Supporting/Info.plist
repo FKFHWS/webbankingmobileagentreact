@@ -69,7 +69,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Allow webbankingmobileagentreact to access your microphone</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Allow webbankingmobileagentreact to access your device's accelerometer</string>
+	<string>Allow webbankingmobileagentreact to access your device&apos;s accelerometer</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Give webbankingmobileagentreact permission to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>

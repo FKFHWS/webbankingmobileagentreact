@@ -1,16 +1,6 @@
 'use strict';
-import React, { Component  } from 'react';
-import {
-    ScrollView,
-    Text,
-    TextInput,
-    View,
-    Button,
-    StyleSheet,
-    AppRegistry,
-    TouchableOpacity,
-    Linking,
-} from 'react-native';
+import React, {Component} from 'react';
+import {Linking, Text, TouchableOpacity} from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 
 
@@ -18,7 +8,8 @@ export default class Scanscreen extends Component {
 
     constructor(props)
     {
-      super(props);
+
+        super(props);
       this.state = 
       {
         password: '',

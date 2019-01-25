@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="">
+    <list default="true" id="2244719d-4e40-4fd4-a659-a17d6333c5b7" name="Default Changelist" comment="Android und IOS neu generiert">
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/xcuserdata/fabiankonrad.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/xcuserdata/fabiankonrad.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/xcuserdata/fabiankonrad.xcuserdatad/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcworkspace/xcuserdata/fabiankonrad.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webbankingmobileagentreact.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webbankingmobileagentreact.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/host/exp/exponent/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/host/exp/exponent/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/host/exp/exponent/generated/DetachBuildConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/host/exp/exponent/generated/DetachBuildConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Scanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Scanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Secured.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Secured.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/xcshareddata/xcschemes/webbankingmobileagentreact.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/xcshareddata/xcschemes/webbankingmobileagentreact.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact/AppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.json" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.plist.bak" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/EXBuildConstants.plist.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/webbankingmobileagentreact/Supporting/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <ignored path="node_modules/expo/node_modules/" />
+    <ignored path="android/app/build/" />
+    <ignored path="ios/DerivedData/" />
+    <ignored path="ios/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Versions/Current/" />
+    <ignored path="ios/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/" />
+    <ignored path="ios/Pods/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,18 +66,74 @@
     <favorites_list name="webbankingmobileagentreact" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-290">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.expo/packager-info.json">
+        <entry file="file://$PROJECT_DIR$/shim.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Secured.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/HomeScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-20">
+              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-168">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>expo-cli</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -49,20 +152,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/HomeScreen.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/App _old.js" />
         <option value="$PROJECT_DIR$/Instructions_für_Detach.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/ios/Podfile" />
+        <option value="$PROJECT_DIR$/components/Secured.js" />
+        <option value="$PROJECT_DIR$/components/Scanner.js" />
+        <option value="$PROJECT_DIR$/components/HomeScreen.js" />
+        <option value="$PROJECT_DIR$/components/Login.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
-    <option name="y" value="23" />
+    <option name="x" value="42" />
+    <option name="y" value="25" />
     <option name="width" value="1260" />
     <option name="height" value="677" />
   </component>
@@ -72,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,53 +185,25 @@
               <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
               <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
-              <item name=".expo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webbankingmobileagentreact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webbankingmobileagentreact" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -147,26 +224,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="React Native.React Native Expo">
-    <configuration name="React Native Expo" type="ReactNative" factoryName="React Native" singleton="false">
-      <node-interpreter value="project" />
-      <react-native value="$PROJECT_DIR$/node_modules/expo" />
-      <platform value="IOS" />
-      <envs />
-      <only-packager />
-      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="expo start" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
       <method v="2" />
-    </configuration>
-    <configuration name="React Native Ios" type="ReactNative" factoryName="React Native" singleton="false">
-      <node-interpreter value="project" />
-      <react-native value="$PROJECT_DIR$/node_modules/react-native" />
-      <platform value="IOS" />
-      <envs />
-      <only-packager />
-      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <method v="2">
-        <option name="ReactNativePackager" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="ReactNative" factoryName="React Native" singleton="false">
       <node-interpreter value="project" />
@@ -179,10 +247,6 @@
         <option name="ReactNativePackager" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="React Native.React Native Expo" />
-      <item itemvalue="React Native.React Native Ios" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -207,7 +271,8 @@
       <workItem from="1548274867180" duration="334000" />
       <workItem from="1548275504000" duration="3625000" />
       <workItem from="1548280267984" duration="268000" />
-      <workItem from="1548280601620" duration="1442000" />
+      <workItem from="1548280601620" duration="6607000" />
+      <workItem from="1548335834829" duration="26392000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1548167962700</created>
@@ -286,11 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548280969601</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="gradle nochmal angepasst">
+      <created>1548282140295</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548282140295</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31421000" />
+    <option name="totallyTimeSpent" value="62978000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,11 +374,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="23" width="1260" height="677" extended-state="0" />
+    <frame x="42" y="25" width="1260" height="677" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49489796" visible="true" weight="0.2534302" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49234694" visible="true" weight="0.2547619" />
       <window_info id="Structure" order="1" sideWeight="0.50510204" side_tool="true" weight="0.2536946" />
-      <window_info id="npm" order="2" sideWeight="0.50510204" side_tool="true" weight="0.2536946" />
+      <window_info id="npm" order="2" sideWeight="0.50765306" side_tool="true" weight="0.2534302" />
       <window_info id="Favorites" order="3" sideWeight="0.5009141" side_tool="true" weight="0.24939467" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
@@ -315,16 +387,16 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32883435" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3282313" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49959645" weight="0.32820514" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49959645" weight="0.32820514" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49878934" weight="0.32820514" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49717513" visible="true" weight="0.32820514" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49556094" weight="0.32820514" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32883435" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50282484" side_tool="true" weight="0.32883435" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49798223" weight="0.32991454" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50605327" side_tool="true" weight="0.32991454" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49394673" visible="true" weight="0.31848186" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -336,6 +408,39 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49234694" visible="true" weight="0.2534302" />
+      <window_info id="Structure" order="1" sideWeight="0.50510204" side_tool="true" weight="0.2536946" />
+      <window_info id="npm" order="2" sideWeight="0.50765306" side_tool="true" weight="0.2534302" />
+      <window_info id="Favorites" order="3" sideWeight="0.5009141" side_tool="true" weight="0.24939467" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="UI Designer" order="7" />
+      <window_info id="Learn" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32883435" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.32820514" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49878934" weight="0.32820514" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49556094" weight="0.32820514" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32883435" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50605327" side_tool="true" weight="0.32991454" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49394673" visible="true" weight="0.32991454" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -397,7 +502,8 @@
     <MESSAGE value="Erneute Generierung der Ios- und Appledateien" />
     <MESSAGE value="Workspace.xml ins Gitignore geschoben" />
     <MESSAGE value="Android und IOS neu generiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Android und IOS neu generiert" />
+    <MESSAGE value="gradle nochmal angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle nochmal angepasst" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -449,13 +555,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ios/webbankingmobileagentreact.xcodeproj/project.pbxproj" />
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/app/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
@@ -481,20 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/HomeScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -550,8 +635,86 @@
     <entry file="file://$PROJECT_DIR$/.expo/packager-info.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Utilities/RCTLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Secured.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Scanner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shim.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

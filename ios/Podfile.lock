@@ -197,8 +197,22 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - JKBigInteger2 (0.0.5)
   - lottie-ios (2.5.2)
+  - Picker (4.3.7):
+    - Picker/Core (= 4.3.7)
+  - Picker/Core (4.3.7):
+    - React
   - React (0.57.1):
     - React/Core (= 0.57.1)
+  - react-native-camera (1.9.1):
+    - React
+    - react-native-camera/RCT (= 1.9.1)
+    - react-native-camera/RN (= 1.9.1)
+  - react-native-camera/RCT (1.9.1):
+    - React
+  - react-native-camera/RN (1.9.1):
+    - React
+  - react-native-randombytes (3.5.2):
+    - React
   - React/ART (0.57.1):
     - React/Core
   - React/Core (0.57.1):
@@ -288,6 +302,9 @@ DEPENDENCIES:
   - EXTaskManagerInterface (from `../node_modules/expo-task-manager-interface/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - Picker (from `../node_modules/react-native-picker`)
+  - react-native-camera (from `../node_modules/react-native-camera`)
+  - react-native-randombytes (from `../node_modules/react-native-randombytes`)
   - React/ART (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
@@ -409,8 +426,14 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  Picker:
+    :path: "../node_modules/react-native-picker"
   React:
     :path: "../node_modules/react-native"
+  react-native-camera:
+    :path: "../node_modules/react-native-camera"
+  react-native-randombytes:
+    :path: "../node_modules/react-native-randombytes"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -481,9 +504,12 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  Picker: 67a2566d9ff6b141d505d88b9177f905aaa5f1a6
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  react-native-camera: a8d04ef12749def72cae86b0b8d28c2de891a392
+  react-native-randombytes: d3184d351604f78e019535178766590188bbc133
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: c5fa63bbc187c2de7391f13566146ee96b2e3f96
+PODFILE CHECKSUM: 61bd69598ea44e190820d1a6388882518cd2e32a
 
 COCOAPODS: 1.5.3
