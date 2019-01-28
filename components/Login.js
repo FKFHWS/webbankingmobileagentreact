@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 import {ScrollView, StyleSheet, Text} from 'react-native';
 import {Button, FormInput, FormLabel} from 'react-native-elements';
+//Imports aus anderen Skripten
+import * as Communication from "./Communication";
+import * as Storage from "./Storage";
 //import {stringify} from "qs";
 //import {SHA512} from "sha2";
+
 
 export default class Login extends Component {
 
@@ -11,10 +15,13 @@ export default class Login extends Component {
       super(props);
       this.state = 
       {
-          username: 'username',
-          password: 'password',
-          successinfo: ''
+          username: '',
+          password: '',
+          successinfo: '',
       };
+
+
+        //const { navigate } = this.props.navigation; //Navigation als const einbinden
         //Refs auf die beiden Input-Boxen erstellen
         this.usernameInputBox = React.createRef();
         this.passwordInputBox = React.createRef();
@@ -56,20 +63,27 @@ export default class Login extends Component {
         //     {successinfo: 'Falscher Username oder Passwort'}
         //  );
         // }
-        let loginstring = this.checkCredentials;
         //console.log("onloginpress aufgerufen"); //DEBUG
         if ((this.state.username !== '') && (this.state.password !== '')) {
             //var successinfo = ''; //Variable nicht unbedingt als String initialisieren.....
             var username = this.state.username;
             var password = this.state.password;
-            console.log(username);//DEBUG
-            console.log(password);//DEBUG
+            console.log("Username ist: " + username);//DEBUG
+            console.log("Passwort ist: " + password);//DEBUG
 
-            var successinfo = checkCredentials(username, password)
-                .then((successinfo) => {
-                    //console.log('setze jetzt den Status');//DEBUG
-                    console.log('successinfo hat den Wert: ' + successinfo);
-                    this.setState({successinfo: successinfo});
+            var responseJson = Communication.checkCredentials(username, password)
+                .then((responseJson) => {
+                    console.log('Vom Server kam diese Nachricht zurück: ' + JSON.stringify(responseJson));//DEBUG
+
+
+                    console.log("responseJson hat den Modus: ", responseJson.mode);
+                    if (responseJson.mode == 2) { //Wenn der Mode in der Antwort den Wert 2 hat, also LoginToken, führe dies aus
+                        Storage.storeUserAndKey(username, responseJson.sessionKey)
+                            .then(this.props.navigation.navigate('Secured'));
+
+                    } else {
+                        this.setState({successinfo: 'Login war nicht erfolgreich.'});
+                    }
                 });
         }
         console.log("onloginpress durchlaufen"); //DEBUG
@@ -95,7 +109,7 @@ export default class Login extends Component {
                     onPress={this.onLoginPress}
                     title="Anmelden"
                       />
-
+                <Text>Debug Panel</Text>
                 <Text>{this.state.successinfo}</Text>
                 <Text ref={usernameInputBox => this.usernameInputBox = usernameInputBox}>{this.state.username}</Text>
                 <Text ref={passwordInputBox => this.passwordInputBox = passwordInputBox}>{this.state.password}</Text>
@@ -105,76 +119,7 @@ export default class Login extends Component {
     }
 }
 
-// async function checkCredentials(username, password)
-// {q
-//     /* Dies ist der Login über die API (...../api.php/records/....)
-//     let loginjson = fetch('https://194.95.221.67/api.php/records/kunde', {
-//         method: 'GET',
-//         body: {
-//             filter: 'ID,eq,' + this.state.username,
-//             filter: 'PASSWORD,eq,' + this.state.password,
-//         }
-//     });
-//     **********************************************************************/
-//     try {
-//         let bodystring = 'mode=1'  //Später mal aus dem Enum beziehen....
-//             + '&id=' + username   //&id=username
-//             + '&pw=' + password ;  //&pw=password
-//         console.log('Der Bodystring hat den Wert: ' + bodystring);
-//         let response = await fetch('https://fhwswebbankingapp.ddns.net/appdaemon.php', { //Serveradresse muss bei IOS Zertifikate beinhalten
-//             method: 'POST',
-//             body: bodystring,
-//         });
-//         //console.log("Fetch ausgeführt");//DEBUG
-//         let loginstring = await response.text();
-//         console.log("loginstring hat den wert: " + loginstring);
-//         console.log('#########Die Header sind: ##########'+ await response.headers + '##########################');
-//         return loginstring;
-//     }
-//     catch(error)
-//     {
-//         console.log(error);//DEBUG
-//         return 'Fehler';
-//     }
-// }
 
-function checkCredentials(username, password) {
-    // Vorgang mit Fetch funktioniert nicht wirklich gut, aber es kann eine über then eine gewisse Synchronitöt gewährleistet werden.
-    let outstr = fetch('https://fhwswebbankingapp.ddns.net/appdaemon.php', { //Serveradresse muss bei IOS Zertifikate beinhalten
-        method: 'POST',
-        headers: [
-            ['Content-Type', 'text/x-www-form-urlencoded'],
-            ['Access-Control-Allow-Origin', '*'],
-        ],
-        body: 'mode=1'  //Später mal aus dem Enum beziehen....
-            + '&id=' + username   //&id=username
-            + '&pw=' + password  //&pw=passwordbodystring,
-
-    })
-        .then((response) =>
-            //response.formData() //Antwort als formData auslesen
-            response.text()//Antwort als String auslesen
-        )
-        .then((responsebody) => {
-            return responsebody;
-            //responsebody.get("mode") // Einzelnen Schlüssel in der FormData auslesen
-        })
-        /**** Dies wird für formData benötigt, funktioniert jedoch nicht
-         .then ((formEntry)                =>
-         {
-                console.log(formEntry);
-                return formEntry; //Den entsprechenden String über .then() abrufen und als return ausgeben
-                })
-         ***********************************************************/
-        .catch((error) => {
-
-            alert(error);
-            return 'FEHLER';
-        });
-    //console.log(outstr);
-    return outstr;
-    //let url = 'https://fhwswebbankingapp.ddns.net/appdaemon.php';
-}
 
 
 const styles = StyleSheet.create({
