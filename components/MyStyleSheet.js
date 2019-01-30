@@ -25,6 +25,7 @@ export const styles = StyleSheet.create({
     },
     myCloseButton: {
         backgroundColor: 'grey',
+        marginTop: Platform.OS === 'android' ? '8%' : '5%',
     },
     mySlider: {
         marginTop: Platform.OS === 'android' ? '7%' : '0%',

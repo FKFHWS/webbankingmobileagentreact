@@ -33,14 +33,19 @@ export default class Secured extends Component {
             });
     }
 
+    scanQr = () => {
+        this.props.navigation.navigate('Scanscreen');
+    }
 
   render() {
     return (
       <ScrollView style={{ padding: 20 }}>
         <Text style={{ fontSize: 27 }}>Welcome</Text>
         <View style={{ margin: 20 }} />
-          <Button type="outline"
-                  style={styles.myCloseButton}
+          <Button style={styles.myOkButton}
+                  onPress={this.scanQr}
+                  title="Token beziehen"/>
+          <Button style={styles.myCloseButton}
                   onPress={this.onLogoutClicked}
                   title="Logout"/>
       </ScrollView>

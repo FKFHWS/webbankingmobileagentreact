@@ -17,6 +17,11 @@ export async function storeUserAndKey(userID, privateKey) //Speichert den Sessio
     SecureStore.setItemAsync("userID", userID);
 }
 
+export async function storeSharedSecret(sharedSecret) //Speichert nach dem QR-Scan das sharedSecret ein.
+{
+    SecureStore.setItemAsync("sharedSecret", sharedSecret);
+}
+
 export function getAppSessionKey() {
     return SecureStore.getItemAsync("privateSessionKey")
         .then((privateSessionKey) => {
@@ -33,3 +38,10 @@ export function getUserID() {
         });
 }
 
+export function getSharedSecret() {
+    return SecureStore.getItemAsync("sharedSecret")
+        .then((sharedSecret) => {
+            console.log("Aus dem Speicher als SharedSecret abgerufen:" + sharedSecret);
+            return (sharedSecret == null) ? ("") : (sharedSecret);
+        });
+}

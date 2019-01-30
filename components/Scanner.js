@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {Linking, StyleSheet, Text, View} from 'react-native';
 import {BarCodeScanner, Permissions} from 'expo';
+import {storeSharedSecret} from "./Storage";
 
 
 export default class Scanscreen extends Component {
@@ -54,9 +55,10 @@ export default class Scanscreen extends Component {
     }
 
     processBarcode = ({data}) => {//Dies wird beim Scanergebnis ausgeführt. Interrupt-Flag wird gesetzt und der String übergeben.
-        this.setState({scanstring: data, interruptscan: true,});
-        alert(`Bar code with data ${data} has been scanned!`);//DEBUG
-
+        this.setState({interruptscan: true,});
+        //alert(`Bar code with data ${data} has been scanned!`);//DEBUG
+        storeSharedSecret(data)
+            .then(this.props.navigation.navigate('Secured'));
     }
 
 

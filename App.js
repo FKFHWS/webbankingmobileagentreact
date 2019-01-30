@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {createAppContainer, createStackNavigator} from 'react-navigation';
+import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 // You can import from local files
 // import AssetExample from './components/AssetExample';
 import Login from './components/Login.js';
@@ -23,7 +23,7 @@ import * as Storage from "./components/Storage";
 //   )}
 // }
 
-const AppStack = createStackNavigator(
+const AppStack = createSwitchNavigator(
   {
     Login: Login,
     Secured: Secured,
