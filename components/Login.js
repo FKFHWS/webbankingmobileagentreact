@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
-import {ScrollView, StyleSheet, Text} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 import {Button, FormInput, FormLabel} from 'react-native-elements';
 //Imports aus anderen Skripten
 import * as Communication from "./Communication";
+import {registerForPushNotificationsAsync} from "./Communication";
 import * as Storage from "./Storage";
+import {styles} from "./MyStyleSheet";
 //import {stringify} from "qs";
 //import {SHA512} from "sha2";
 
@@ -27,15 +29,6 @@ export default class Login extends Component {
         this.passwordInputBox = React.createRef();
 
     }
-
-    /*    _register = () => {
-        const payload =
-            {
-                    user: this.user,
-                    password: this.password,
-            }
-            console.log(payload);
-        }*/
 
     refreshUser = function (x) {
         //Setze den Text auf "", um zu verhindern, dass er zum Object gecastet wird und ein Fehler erzeugt wird.
@@ -78,11 +71,17 @@ export default class Login extends Component {
 
                     console.log("responseJson hat den Modus: ", responseJson.mode);
                     if (responseJson.mode == 2) { //Wenn der Mode in der Antwort den Wert 2 hat, also LoginToken, führe dies aus
+                        console.log("Speichere " + username + "als Username ein. Als sessionKey speichere ein:" + responseJson.sessionKey);//DEBUG
                         Storage.storeUserAndKey(username, responseJson.sessionKey)
                             .then(this.props.navigation.navigate('Secured'));
-
+                        registerForPushNotificationsAsync(username, responseJson.sessionKey)
+                            .then((jsontoken) =>
+                                console.log(JSON.stringify(jsontoken))
+                            );
                     } else {
                         this.setState({successinfo: 'Login war nicht erfolgreich.'});
+                        this.usernameInputBox.shake();
+                        this.passwordInputBox.shake();
                     }
                 });
         }
@@ -97,11 +96,17 @@ export default class Login extends Component {
                     Login
                 </Text>
                 <FormLabel>Benutzername</FormLabel>
-                <FormInput placeholder='Geben Sie hier Ihren Benutzernamen ein....'
+                <FormInput
+                    ref={usernameInputBox => this.usernameInputBox = usernameInputBox}
+                    returnKeyType="next"
+                    placeholder='Geben Sie hier Ihren Benutzernamen ein....'
                            onSubmitEditing={(event) => this.refreshUser(event.nativeEvent.text)}
                            onChangeText={(username) => this.setState({username})} value={this.state.username}/>
                 <FormLabel>Passwort</FormLabel>
-                <FormInput secureTextEntry onSubmitEditing={(event) => this.refreshPassword(event.nativeEvent.text)}
+                <FormInput
+                    ref={passwordInputBox => this.passwordInputBox = passwordInputBox}
+                    returnKeyType="send"
+                    secureTextEntry onSubmitEditing={(event) => this.refreshPassword(event.nativeEvent.text)}
                            placeholder='Geben Sie hier Ihr Passwort ein...'
                            onChangeText={(password) => this.setState({password})} value={this.state.password}/>
                 <Button
@@ -109,10 +114,10 @@ export default class Login extends Component {
                     onPress={this.onLoginPress}
                     title="Anmelden"
                       />
-                <Text>Debug Panel</Text>
-                <Text>{this.state.successinfo}</Text>
-                <Text ref={usernameInputBox => this.usernameInputBox = usernameInputBox}>{this.state.username}</Text>
-                <Text ref={passwordInputBox => this.passwordInputBox = passwordInputBox}>{this.state.password}</Text>
+                {/*<Text>Debug Panel</Text>*/}
+                <Text style={styles.errorText}>{this.state.successinfo}</Text>
+                {/*<Text }>{this.state.username}</Text>*/}
+                {/*<Text >{this.state.password}</Text>*/}
 
                   </ScrollView>
             )
@@ -122,18 +127,5 @@ export default class Login extends Component {
 
 
 
-const styles = StyleSheet.create({
-    myOkButton: {
-        //border:  ,
-        //flex: 1,
-        //justifyContent: 'center',
-        //position: 'relative',
-        //top: '50%',
-        //left: '50%',
-        backgroundColor: "purple",
-        //marginHorizontal: 'auto',
-        //width: '40%',
-        //maxWidth: '50%',
-    },
-});
+
 

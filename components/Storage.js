@@ -11,23 +11,25 @@ import {SecureStore} from 'expo';
     }
 }*/
 
-export async function storeUserAndKey(privateKey, userID) //Speichert den Session Key und die UserID im Verschlüsselten Speicher der App ab. Gleichzeitig wird sichergestellt, dass der alte Schlüssel gelöscht wird.
+export async function storeUserAndKey(userID, privateKey) //Speichert den Session Key und die UserID im Verschlüsselten Speicher der App ab. Gleichzeitig wird sichergestellt, dass der alte Schlüssel gelöscht wird.
 {
     SecureStore.setItemAsync("privateSessionKey", privateKey);
-    SecureStore.setItemAsync("userID", privateKey);
+    SecureStore.setItemAsync("userID", userID);
 }
 
 export function getAppSessionKey() {
     return SecureStore.getItemAsync("privateSessionKey")
         .then((privateSessionKey) => {
-            return privateSessionKey == null ? "" : privateSessionKey
+            console.log("Aus dem Speicher als sessionKey abgerufen:" + privateSessionKey);
+            return (privateSessionKey == null) ? ("") : (privateSessionKey);
         });
 }
 
 export function getUserID() {
     return SecureStore.getItemAsync("userID")
         .then((userID) => {
-            return userID == null ? "" : userID
+            console.log("Aus dem Speicher als userID abgerufen:" + userID);
+            return (userID == null) ? ("") : (userID);
         });
 }
 

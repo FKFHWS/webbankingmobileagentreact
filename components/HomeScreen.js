@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {Platform, Slider, StyleSheet, Text, View} from 'react-native';
-import {Constants} from 'expo';
+import {Slider, Text, View} from 'react-native';
 import {Button} from 'react-native-elements'
+import {styles} from "./MyStyleSheet";
 
 
 export default class HomeScreen extends React.Component {
@@ -51,35 +51,3 @@ export default class HomeScreen extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
-
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-    myOkButton: {
-        //border:  ,
-        //flex: 1,
-        //justifyContent: 'center',
-        //position: 'relative',
-        //top: '50%',
-        //left: '50%',
-        backgroundColor: "purple",
-        //marginHorizontal: 'auto',
-        //width: '40%',
-        //maxWidth: '50%',
-
-    },
-    mySlider: {
-        marginTop: Platform.OS === 'android' ? '7%' : '0%',
-    },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});

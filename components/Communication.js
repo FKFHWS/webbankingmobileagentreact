@@ -1,4 +1,6 @@
 //In dieses Skript wurden alle Funktionen gepackt, die eine Kommunikation mit dem Server durchführen.
+import {Notifications, Permissions} from 'expo';
+
 
 export function checkCredentials(username, password) {
     // Vorgang mit Fetch funktioniert nicht wirklich gut, aber es kann eine über then eine gewisse Synchronitöt gewährleistet werden.
@@ -118,3 +120,77 @@ export function getUserMasterData(userid, sessionKey) {
 //     }
 // }
 
+
+const PUSH_ENDPOINT = 'https://fhwswebbankingapp.ddns.net/appdaemon.php';
+
+export async function registerForPushNotificationsAsync(userid, sessionKey) {
+    const {status: existingStatus} = await Permissions.getAsync(
+        Permissions.NOTIFICATIONS
+    );
+    let finalStatus = existingStatus;
+
+    // only ask if permissions have not already been determined, because
+    // iOS won't necessarily prompt the user a second time.
+    if (existingStatus !== 'granted') {
+        // Android remote notification permissions are granted during the app
+        // install, so this will only ask on iOS
+        const {status} = await Permissions.askAsync(Permissions.NOTIFICATIONS);
+        finalStatus = status;
+    }
+
+    // Stop here if the user did not grant permissions
+    if (finalStatus !== 'granted') {
+        return;
+    }
+
+    // Get the token that uniquely identifies this device
+    let token = await Notifications.getExpoPushTokenAsync();
+
+
+    // POST the token to your backend server from where you can retrieve it to send push notifications.
+    console.log('mode=4' //Modus 4 Wählen: ActivatePush
+        + '&token=' + token //Parameter token auf den Tokenwert setzen.
+        + '&id=' + userid //ID mitsenden, um das Paket zuweisen zu können.
+        + '&sessionKey=' + sessionKey); //DEBUG
+    return fetch(PUSH_ENDPOINT, {
+        method: 'POST',
+        headers: [
+            ['Content-Type', 'application/x-www-form-urlencoded'],
+            ['Access-Control-Allow-Origin', '*'],
+            ['Accept', 'application/json']
+        ],
+        body:
+            'mode=4' //Modus 4 Wählen: ActivatePush
+            + '&token=' + token //Parameter token auf den Tokenwert setzen.
+            + '&id=' + userid //ID mitsenden, um das Paket zuweisen zu können.
+            + '&sessionKey=' + sessionKey,
+
+    });
+}
+
+export function killSession(userid, sessionKey) {
+    console.log('mode=100'  //Modus Kill Session
+        + '&id=' + userid   //&id=username
+        + '&sessionKey=' + sessionKey//&sessionKey=234235235afedfeafea235.....)
+    );//DEBUG
+    return fetch('https://fhwswebbankingapp.ddns.net/appdaemon.php', { //Serveradresse muss bei IOS Zertifikate beinhalten
+        method: 'POST',
+        headers: [
+            ['Content-Type', 'application/x-www-form-urlencoded'],
+            ['Access-Control-Allow-Origin', '*'],
+            ['Accept', 'application/json']
+        ],
+        body: 'mode=100'  //Modus Kill Session
+            + '&id=' + userid   //&id=username
+            + '&sessionKey=' + sessionKey //&sessionKey=234235235afedfeafea235.....
+    })
+        .then((response) =>
+            response.json()) //Antwort in Json parsen
+        .then((responseJson) => {
+            return (responseJson.mode == 0); //Den Eintrag mode aus dem Json abrufen. Ist der Mode auf '0' gesetzt, wurden die Credentials vom Server erfolgreich autorisiert.
+        })
+        .catch((error) => {
+            console.log(error); //DEBUG
+            return "Fehler"; //DEBUG
+        });
+}
