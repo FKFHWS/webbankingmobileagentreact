@@ -65,6 +65,10 @@ export function checkSessionKey(userid, sessionKey) {
 }
 
 export function getUserMasterData(userid, sessionKey) {
+    console.log("Anfrage hat den String: " + 'mode=3'  //Später mal aus dem Enum beziehen...., in diesem Fall soll der Modus GetMasterData gewählt werden.
+        + '&id=' + userid   //&id=username
+        + '&sessionKey=' + sessionKey //&sessionKey=234235235afedfeafea235.....)
+    );
     return fetch('https://fhwswebbankingapp.ddns.net/appdaemon.php', { //Serveradresse muss bei IOS Zertifikate beinhalten
         method: 'POST',
         headers: [
@@ -79,6 +83,7 @@ export function getUserMasterData(userid, sessionKey) {
         .then((response) =>
             response.json()) //Antwort in Json parsen
         .then((responseJson) => {
+            console.log("Es kamen folgende Stammdaten zurück:" + JSON.stringify(responseJson));
             return responseJson.masterData; //Den Eintrag masterData aus dem Json als Return zurückgeben
         })
         .catch((error) => {

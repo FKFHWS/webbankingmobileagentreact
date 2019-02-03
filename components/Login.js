@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ScrollView, Text} from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 import {Button, FormInput, FormLabel} from 'react-native-elements';
 //Imports aus anderen Skripten
 import * as Communication from "./Communication";
@@ -14,13 +14,13 @@ export default class Login extends Component {
 
     constructor(props)
     {
-      super(props);
-      this.state = 
-      {
-          username: '',
-          password: '',
-          successinfo: '',
-      };
+        super(props);
+        this.state =
+            {
+                username: '',
+                password: '',
+                successinfo: '',
+            };
 
 
         //const { navigate } = this.props.navigation; //Navigation als const einbinden
@@ -92,7 +92,8 @@ export default class Login extends Component {
     render() {
         return (
             <ScrollView style={{padding: 20}}>
-                <Text style={{fontSize: 27}}>
+                <View style={{margin: 20}}/>
+                <Text style={styles.myHeadline}>
                     Login
                 </Text>
                 <FormLabel>Benutzername</FormLabel>
@@ -100,27 +101,27 @@ export default class Login extends Component {
                     ref={usernameInputBox => this.usernameInputBox = usernameInputBox}
                     returnKeyType="next"
                     placeholder='Geben Sie hier Ihren Benutzernamen ein....'
-                           onSubmitEditing={(event) => this.refreshUser(event.nativeEvent.text)}
-                           onChangeText={(username) => this.setState({username})} value={this.state.username}/>
+                    onSubmitEditing={(event) => this.refreshUser(event.nativeEvent.text)}
+                    onChangeText={(username) => this.setState({username})} value={this.state.username}/>
                 <FormLabel>Passwort</FormLabel>
                 <FormInput
                     ref={passwordInputBox => this.passwordInputBox = passwordInputBox}
                     returnKeyType="send"
                     secureTextEntry onSubmitEditing={(event) => this.refreshPassword(event.nativeEvent.text)}
-                           placeholder='Geben Sie hier Ihr Passwort ein...'
-                           onChangeText={(password) => this.setState({password})} value={this.state.password}/>
+                    placeholder='Geben Sie hier Ihr Passwort ein...'
+                    onChangeText={(password) => this.setState({password})} value={this.state.password}/>
                 <Button
                     buttonStyle={styles.myOkButton}
                     onPress={this.onLoginPress}
                     title="Anmelden"
-                      />
+                />
                 {/*<Text>Debug Panel</Text>*/}
                 <Text style={styles.errorText}>{this.state.successinfo}</Text>
                 {/*<Text }>{this.state.username}</Text>*/}
                 {/*<Text >{this.state.password}</Text>*/}
 
-                  </ScrollView>
-            )
+            </ScrollView>
+        )
     }
 }
 

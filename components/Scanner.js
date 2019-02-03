@@ -1,21 +1,23 @@
 'use strict';
 import React, {Component} from 'react';
-import {Linking, StyleSheet, Text, View} from 'react-native';
+import {Linking, Text, View} from 'react-native';
 import {BarCodeScanner, Permissions} from 'expo';
 import {storeSharedSecret} from "./Storage";
+import {Button} from 'react-native-elements';
+import {styles} from "./MyStyleSheet"
 
 
 export default class Scanscreen extends Component {
     constructor(props)
     {
         super(props);
-      this.state = 
-      {
-          scanstring: '',
-          interruptscan: false,
-          successinfo: '',
-          hasCameraPermission: null,
-      };
+        this.state =
+            {
+                scanstring: '',
+                interruptscan: false,
+                successinfo: '',
+                hasCameraPermission: null,
+            };
     }
 
     async componentDidMount() {
@@ -23,13 +25,17 @@ export default class Scanscreen extends Component {
         this.setState({hasCameraPermission: status === 'granted'});
     }
     onSuccess(e) {
-    Linking
-      .openURL(e.data)
-      .catch(err => console.error('Das hat nicht funktioniert....', err));
+        Linking
+            .openURL(e.data)
+            .catch(err => console.error('Das hat nicht funktioniert....', err));
     }
 
+    onBackPress = () => {
+        this.props.navigation.navigate('Secured');
+    }
 
     render() {
+
         const {hasCameraPermission, interruptscan} = this.state;
         if (interruptscan) {//Liegt ein Interrupt aus einem vorherigen Scan an, so wird die Query unterbrochen. Ansonsten würde dauerhauft neu gescannt werden(IOS)
             return <Text>Scanvorang unterbrochen</Text>;
@@ -42,16 +48,19 @@ export default class Scanscreen extends Component {
         }
         return (
             <View style={{flex: 1}}>
+                <Button buttonStyle={styles.myBackButton}
+                        onPress={this.onBackPress}
+                        title="<zurück"/>
                 <BarCodeScanner
                     onBarCodeScanned={this.processBarcode}
                     barCodeTypes={[BarCodeScanner.Constants.BarCodeType.qr]}
-                    style={StyleSheet.absoluteFill}
+                    style={styles.myCameraView}
                 />
                 {/*<TouchableOpacity>*/}
                 {/*<Text>OK. Got it!</Text>*/}
                 {/*</TouchableOpacity>*/}
             </View>
-            )
+        )
     }
 
     processBarcode = ({data}) => {//Dies wird beim Scanergebnis ausgeführt. Interrupt-Flag wird gesetzt und der String übergeben.
@@ -62,5 +71,4 @@ export default class Scanscreen extends Component {
     }
 
 
-    
 }

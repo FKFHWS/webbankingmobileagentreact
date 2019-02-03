@@ -24,26 +24,26 @@ import * as Storage from "./components/Storage";
 // }
 
 const AppStack = createSwitchNavigator(
-  {
-    Login: Login,
-    Secured: Secured,
-    Home: HomeScreen,
-    Scanscreen: Scanscreen
-  },
-  {
-  initialRouteName: "Home"
-  },
-/*  {
-    defaultNavigationOptions: {
-      headerTintColor: '#fff',
-      headerStyle: {
-        backgroundColor: '#0a0',
-      },
+    {
+        Login: Login,
+        Secured: Secured,
+        Home: HomeScreen,
+        Scanscreen: Scanscreen
     },
-    navigationOptions: {
-      tabBarLabel: 'Home!',
+    {
+        initialRouteName: "Home"
     },
-  }*/
+    /*  {
+        defaultNavigationOptions: {
+          headerTintColor: '#fff',
+          headerStyle: {
+            backgroundColor: '#0a0',
+          },
+        },
+        navigationOptions: {
+          tabBarLabel: 'Home!',
+        },
+      }*/
 );
 const AppContainer =  createAppContainer(AppStack);
 
@@ -77,8 +77,8 @@ export default class App extends Component {
     }
 
 
-  render(){
-    return<AppContainer />
+    render() {
+        return <AppContainer/>
 
-  }
+    }
 }
