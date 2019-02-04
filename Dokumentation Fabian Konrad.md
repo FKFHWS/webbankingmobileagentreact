@@ -3,7 +3,7 @@
 ## Inhaltsverzeichnis
 - [Dokumentation der von Fabian Konrad durchgeführten Entwicklungen](#dokumentation-der-von-fabian-konrad-durchgef%C3%BChrten-entwicklungen)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
-  - [Motivation und Zielsetzung <a name="motivation"></a>](#motivation-und-zielsetzung-a-name%22motivation%22a)
+  - [Motivation und Zielsetzung](#motivation-und-zielsetzung)
   - [Installation der PHP-Bibliotheken und -Dependencies](#installation-der-php-bibliotheken-und--dependencies)
   - [Benutzung von cURL](#benutzung-von-curl)
   - [Sicherheit und Konfiguration des Apache-Servers](#sicherheit-und-konfiguration-des-apache-servers)
@@ -16,7 +16,8 @@
     - [Kommunikation mit der App](#kommunikation-mit-der-app)
   - [Entwicklung des Mobile Agent](#entwicklung-des-mobile-agent)
 
-## Motivation und Zielsetzung <a name="motivation"></a>
+
+## Motivation und Zielsetzung
 Für meinen Teil habe ich mir als Ziel gesetzt, für die gesamte Architektur eine sichere Übertragung der Daten zu gewährleisten. Dies beginnt bei der Auswahl der Technologie und endet bei der Gestaltung der verschiedenen User-Interaktionen. Überall müssen Komponenten eingebaut werden, die die Sicherheit der Übertragung gewährleisten. Es muss sichergestellt werden, dass kein User seine Bankdaten verliert, genauso wie sichergestellt werden muss, dass seine Daten nicht an Dritte weitergegeben werden können. Beim Thema Sicherheit hatte ich mir als Ziel gesetzt, diese hoch zu halten, indem ich das Thema Asynchronität hervorhob: Ein Mensch kann innerhalb weniger Sekunden seinen Blick von einem Blatt Papier auf ein Handy und danach auf einen Computer werfen. Währenddessen müssen Computer oder Bots für jedes einzelne Gerät zunächst die Adressen aufdecken, über die sie erreichbar sind. Wenn es nun anschließend um den Zugriff auf die Geräte geht, muss dieser vorher auf dem Computer oder Bot implementiert worden sein. Einen Zettel wird der Computer ohne die Hilfe eines Scanners erst recht nicht lesen können.
 Die Sicherheit entsteht folglich dadurch, dass der Mensch technisch weitaus flexibler ist als die Software. Letztendlich bedeutet dies, dass man die höchste Sicherheit ganz einfach gewährleisten kann, nämlich dann, wenn man Autorisierungen durch den User einfordert.
 Gerade beim Thema Geld ist eine Autorisierung ein äußerst wichtiges Thema. Aus diesem Grund habe ich eine Mobile App konzipiert, die sicherstellt, dass jede Zahlung, jede Transaktion und jede Handlung betreffend des User-Accounts durch einen menschlichen Klick auf einen Button genehmigt wird. So wird auf Höchster Ebene sichergestellt, dass der Mensch, der das Online-Banking-Tool nutzen will, durch sein persönliches Zutun bewiesen hat, dass er ein Mensch ist und kein Bot die wichtigsten User-daten abrufen kann.
@@ -56,9 +57,9 @@ openssl rsa -in "./ssl.key/ca-bundle.key" -out "./ssl.key/ca-public.key"
 "" >"./ssl.crt/serial.srl"
 $str  = openssl x509 -in "./ssl.crt/ca-bundle.crt" -noout -serial
 $str = ($str).Substring( 7 , 16 )
-$str > "./ssl.crt/serial.srl" #Serialnummer in die Datei einf�gen. Die Deklaration muss vorher aus dem String entfernt werden.
+$str > "./ssl.crt/serial.srl" #Serialnummer in die Datei einfügen. Die Deklaration muss vorher aus dem String entfernt werden.
 openssl req -x509 -newkey rsa:4096 -keyout "./server-ca.key" -out "./server-ca.crt" -days 3650 -config certify_server.cnf -sha512 -nodes
-#Certificate Signing Request aus drei zuf�lligen Schl�sseln generieren
+#Certificate Signing Request aus drei zufälligen Schlüsseln generieren
 openssl req -new -newkey rsa:4096 -keyout "./ssl.key/server0.key" -out "./ssl.csr/cert0.csr" -days 3650 -config certify_server.cnf -sha512 -nodes
 openssl req -new -newkey rsa:4096 -keyout "./ssl.key/server1.key" -out "./ssl.csr/cert1.csr" -days 3650 -config certify_server.cnf -sha512 -nodes
 openssl req -new -newkey rsa:4096 -keyout "./ssl.key/server2.key" -out "./ssl.csr/cert2.csr" -days 3650 -config certify_server.cnf -sha512 -nodes
@@ -110,4 +111,3 @@ Es wurden für die Implementierung der Ticketingsysteme bei der Accountaktivieru
 Für die Kommunikation mit der App wurden drei Skripte bereitgestellt. Das erste Skript war eine versuchsweise Verwendung einer REST-API, zu finden unter api.php . Diese reichte jedoch nicht für die umfangreichen Authentifizierungsvorgänge aus und wurde durch ein selbst entwickeltes Skript ersetzt. Das Skript mit dem Namen appdaemon.php ist der zentrale Kommunikationspartner der App und beantwortet alle zugetragenen Anforderungen. Die Anfragen der App werden in der Form x-www-urlencoded im Body übertragen. Die Antworten sind im JSON-Format. Die genaue Syntax und Funktionsweise der Anfragen ist im Skript selbst definiert. Um Push-Nachrichten zu ermöglichen, wird dieses Skript durch die Datei pushservice.php unterstützt. Diese führt Anmeldungen bei der Expo-Push-Cloud durch und sendet auch dorthin Push-Anfragen weiter. Genau hier entstand auch das spätere Problem, dass die App nicht auf das Expo-Framework verzichten kann. Eine totale Umstellung aller Push-Dienste auf die Apple-Push-Services und die Android-Firebase-Dienste wäre zwar möglich, entsprach jedoch nicht der Zielsetzung. Zusätzlich wäre dies im Falle von IOS nur mit einer zu kaufenden Entwicklerlizenz möglich, die jedoch nicht vorlag. Weitere Informationen finden sich in der Dokumentation zur Datei Communication.js.
 ## Entwicklung des Mobile Agent
 Der Mobile Agent ist ein großes eigenständiges Teilprojekt zu dem Onlinebanking Tool. Ziel war es eine mobile Anwendung für unterschiedliche Endgeräte bereitzustellen. Dies sollten primär IOS- und Android-Handys sein. Eine potentielle weitere Plattform waren sogenannte UWP-Apps, also Apps für Windows-10-Endgeräte. Der Mobile Agent sollte die Möglichkeit bieten, dass sich ein Kunde mit Username beziehungsweise Kundennummer und Passwort auf dem Handy anmeldet und anschließend über diesen Weg seine Buchungen verfolgen kann. Der Erste Ansatz, dies zu realisieren, erfolgte dementsprechend mit einem Multiplattform-Framework, das jedes dieser drei Endgeräte unterstützt. Die Empfehlung des betreuenden Professors war Apache Cordova, mit dem auch zunächst ein erster Versuch implementiert wurde. 
-#
