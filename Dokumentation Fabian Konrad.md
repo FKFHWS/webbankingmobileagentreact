@@ -1,8 +1,20 @@
+[comment]: <> (Dieses Dokument besitzt ein Inhaltsverzeichnis, hierfür muss markdown TOC in Visual Studio Code integriert werden)
 # Dokumentation der von Fabian Konrad durchgeführten Entwicklungen
 ## Inhaltsverzeichnis
-1. [Motivation und Zielsetzung](#motivation)
-2. [Installation der PHP-Bibliotheken und -Dependencies](#php-dependencies)
-3. [Benutzung von cURL](#curl)
+- [Dokumentation der von Fabian Konrad durchgeführten Entwicklungen](#dokumentation-der-von-fabian-konrad-durchgef%C3%BChrten-entwicklungen)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Motivation und Zielsetzung <a name="motivation"></a>](#motivation-und-zielsetzung-a-name%22motivation%22a)
+  - [Installation der PHP-Bibliotheken und -Dependencies](#installation-der-php-bibliotheken-und--dependencies)
+  - [Benutzung von cURL](#benutzung-von-curl)
+  - [Sicherheit und Konfiguration des Apache-Servers](#sicherheit-und-konfiguration-des-apache-servers)
+  - [Entwicklungen auf dem Server](#entwicklungen-auf-dem-server)
+    - [Login](#login)
+    - [Registrierung](#registrierung)
+    - [Generierung des Shared Secrets](#generierung-des-shared-secrets)
+    - [Passwort-Vergessen-Modus](#passwort-vergessen-modus)
+    - [Anpassungen an der Datenbank](#anpassungen-an-der-datenbank)
+    - [Kommunikation mit der App](#kommunikation-mit-der-app)
+  - [Entwicklung des Mobile Agent](#entwicklung-des-mobile-agent)
 
 ## Motivation und Zielsetzung <a name="motivation"></a>
 Für meinen Teil habe ich mir als Ziel gesetzt, für die gesamte Architektur eine sichere Übertragung der Daten zu gewährleisten. Dies beginnt bei der Auswahl der Technologie und endet bei der Gestaltung der verschiedenen User-Interaktionen. Überall müssen Komponenten eingebaut werden, die die Sicherheit der Übertragung gewährleisten. Es muss sichergestellt werden, dass kein User seine Bankdaten verliert, genauso wie sichergestellt werden muss, dass seine Daten nicht an Dritte weitergegeben werden können. Beim Thema Sicherheit hatte ich mir als Ziel gesetzt, diese hoch zu halten, indem ich das Thema Asynchronität hervorhob: Ein Mensch kann innerhalb weniger Sekunden seinen Blick von einem Blatt Papier auf ein Handy und danach auf einen Computer werfen. Währenddessen müssen Computer oder Bots für jedes einzelne Gerät zunächst die Adressen aufdecken, über die sie erreichbar sind. Wenn es nun anschließend um den Zugriff auf die Geräte geht, muss dieser vorher auf dem Computer oder Bot implementiert worden sein. Einen Zettel wird der Computer ohne die Hilfe eines Scanners erst recht nicht lesen können.
