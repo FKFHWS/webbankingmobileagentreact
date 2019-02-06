@@ -39,8 +39,8 @@ export default class Secured extends Component {
                 Storage.getSharedSecret()
             )
             .then((sharedSecret) => {
-                if (sharedSecret == "") //Testen, ob das Shared Secret bereits eingespeichert ist
-                    this.setState({sharedSecret: sharedSecret}) // Wenn das Shared Secret existiert, einspeichern.
+                if (sharedSecret != "") //Testen, ob das Shared Secret bereits eingespeichert ist
+                    this.setState({sharedSecret: sharedSecret.substr(124, 4)}) // Wenn das Shared Secret existiert, einspeichern.
                 //Wenn nicht, den String nicht verändern.
             })
         /*            .then(()=> {

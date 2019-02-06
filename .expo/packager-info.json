@@ -1,9 +1,9 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 2678,
+  "packagerPid": 1628,
   "expoServerNgrokUrl": "https://ji-6en.fkfhws.webbankingnotdetached.exp.direct",
   "packagerNgrokUrl": "https://packager.ji-6en.fkfhws.webbankingnotdetached.exp.direct",
-  "ngrokPid": 2697,
-  "devToolsPort": 19002
+  "ngrokPid": 1645,
+  "devToolsPort": 19003
 }
