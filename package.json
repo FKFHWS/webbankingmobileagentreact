@@ -1,13 +1,13 @@
 {
-  "name": "webbankingmobileagentreact",
-  "version": "1.1.0",
+  "name": "webbankingmobileagentstandalone",
+  "version": "0.2.0",
   "description": "Mobile Agent des Programmierprojekts an der FHWS",
   "author": "Fabian Konrad",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "dependencies": {
     "expo": "^32.0.0",
-    "expo-cli": "^2.7.0",
+    "expo-cli": "^2.8.0",
     "prop-types": "^15.3.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
